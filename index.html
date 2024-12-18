@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juleoppgaver</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <div class="countdown-wrapper">
+        <div class="countdown">
+            <h2>Nedtelling til Juleferien</h2>
+            <div id="timer">
+                <div>
+                    <span id="days">00</span>
+                    <div>Days</div>
+                </div>
+                <div>
+                    <span id="hours">00</span>
+                    <div>Hours</div>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <div>Minutes</div>
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    <div>Seconds</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Dropdown Button -->
+    <button id="toggleButton">Velg Sektion</button>
+
+    <!-- Dropdown Menu -->
+    <div id="dropdownMenu" class="dropdown-content">
+        <button onclick="showSection('gavetype')">Gavetips Generator</button>
+        <button onclick="showSection('julekalender')">Julekalender</button>
+    </div>
+
+    <!-- Gavetips Generator Section -->
+    <div class="container" id="gavetype">
+        <h2>Gavetips Generator</h2>
+        <p>Trenger du gavetips? Klikk på knappen for et forslag!</p>
+        <button id="generateGiftButton">Generer Gavetips</button>
+        <div id="giftSuggestion" class="gift-suggestion"></div>
+    </div>
+
+    <div id="julekalender"></div>
+
+
+
+    <canvas id="snowCanvas"></canvas>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
